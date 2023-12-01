@@ -45,6 +45,8 @@ body {
     font-size: 14px !important;
     font-style: normal !important;
     font-weight: 200px !important;
+    width: 70%;
+    line-height: 1.6;
 }
 
 .container-one-inputs {
@@ -211,7 +213,8 @@ svg {
         padding: 10px;
         padding-left: 30px;
         clip-path: polygon(100% 0, 0 0, 100% 400%); 
-         width: 40%;
+         width: 140px;
+         height: 58px;
          display: flex;
          justify-content: center;
 
