@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Sukar';
+    src: url('./sukar-cufonfonts/Sukar\ Black.ttf') format('truetype'),
+        url('./sukar-cufonfonts/Sukar\ Bold.ttf') format('truetype'),
+        url('./sukar-cufonfonts/Sukar\ Regular.ttf') format('truetype'),
+        url('./sukar-cufonfonts/SukarRegular.ttf') format('truetype'),
+        url('./sukar-cufonfonts/SukarRegular.otf') format('opentype'), url('./sukar-cufonfonts/SukarBold.ttf') format('truetype'), url('./sukar-cufonfonts/SukarBold.otf') format('opentype'), url('./sukar-cufonfonts/SukarBlack.ttf') format('truetype'),
+        url('./sukar-cufonfonts/SukarBlack.otf') format('opentype'),;
+    /* Add additional formats if needed */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+
+    height: 100vh;
+    font-family: 'Sukar', sans-serif;
+}
+
+.container-one {
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.container-one-texts {
+    margin-top: 120px;
+}
+
+.container-one-texts h2 {
+    color: #468F62;
+
+
+    font-size: 69.247px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container-one-texts p {
+    margin-top: 20px;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400px !important;
+}
+
+.container-one-inputs {
+    margin-top: 30px;
+
+}
+
+.container-one-inputs input,
+.container-one-inputs button {
+    height: 56px;
+}
+
+.container-one-inputs input {
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #468F62;
+    padding-left: 20px;
+}
+
+.container-one-inputs button {
+    width: 20%;
+    border-radius: 8px;
+    background: #468F62;
+    color: white;
+    border: 0;
+}
+
+.container-one-links {
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.container-one-links p {
+    color: #000;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 5px;
+
+}
+
+.container-one-links div {
+    display: flex;
+    align-items: center;
+}
+
+.container-one-links div:nth-child(2) {
+    margin-left: 30px;
+}
+
+svg {
+    background-color: #468F62;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.container-two {
+    width: 50%;
+
+}
+
+
+.mini-container {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.container-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-one {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-top: 40px;
+        order: 2;
+
+    }
+
+    .container-one-texts {
+        margin-top: 20px;
+    }
+
+    .container-one-texts h2 {
+        font-size: 40px;
+    }
+
+    .container-one-texts p,
+    .container-one-links p {
+        font-size: 16px;
+    }
+
+    .container-one-links {
+        justify-content: space-between;
+    }
+
+    .container-one-links div:nth-child(2) {
+        margin-left: 0;
+        margin-top: 0px;
+    }
+
+    .container-one-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .container-one-inputs input {
+        width: 100%;
+    }
+
+    .container-one-inputs button {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        height: 50px;
+    }
+
+    .container-two {
+
+        width: 100%;
+        margin: 0 auto;
+        order: 1;
+        margin-top: 0px;
+        height: 40%;
+        position: relative;
+    }
+
+    .container-one-links {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container-one-links p {
+        font-size: 10px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0%;
+        z-index: 1000;
+        background-color: white;
+        right: 0%;
+        padding: 10px;
+        padding-left: 30px;
+        clip-path: polygon(100% 0, 0 0, 100% 400%);
+
+
+
+    }
+
+    .logo img {
+        width: 100px;
+        height: 40px;
+    }
+}
