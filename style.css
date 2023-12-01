@@ -145,7 +145,11 @@ svg {
     }
 
     .container-one-texts h2 {
-        font-size: 40px;
+        font-size: 47px;
+        text-align: center;
+    }
+    .container-one-texts p {
+        text-align: center;
     }
 
     .container-one-texts p,
@@ -206,8 +210,8 @@ svg {
         right: 0%;
         padding: 10px;
         padding-left: 30px;
-         clip-path: polygon(100% 0, 0 0, 100% 400%); 
-         width: 60%;
+        clip-path: polygon(100% 0, 0 0, 100% 400%); 
+         width: 40%;
          display: flex;
          justify-content: center;
 
@@ -216,7 +220,7 @@ svg {
     }
 
     .logo img {
-        width: 150px;
-        height: 60px;
+        width: 65px;
+        height: 36px;
     }
 }
